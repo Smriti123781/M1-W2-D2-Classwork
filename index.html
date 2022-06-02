@@ -13,9 +13,55 @@
         body{
             background-color: #1e1b33;
         }
+        .logo{
+            font-family: 'merriweather';
+            font-size: 17pt;
+        }
+        .logo, ul, li{
+            color:#fff ;
+        }
+        nav, nav ul{
+            display: flex;
+        }
+        nav{
+            justify-content: space-around;
+            margin-top: 1em;
+        }
+        nav ul{
+            list-style: none;
+            width: 60%;
+            justify-content: space-evenly;
+            font-family: 'Poppins';
+        }
+        .nav, ul, li:hover nav svg:hover{
+            color: #8f3c47;
+            cursor: pointer;
+            transition: 200ms ;
+            fill: #8f3c47;
+            
+        }
+        .active{
+            border-bottom:2px solid #cf4e5f ;
+        }
+        nav svg{
+         height: 1.5em;
+         width: 1.5em;
+         color: #fff;
+        }
     </style>
 </head>
 <body>
-    
+    <nav>
+        <h3 class="logo">Smriti Thapa</h3>
+        <ul>
+            <li class="active">Home</li>
+            <li>About</li>
+            <li>Experience</li>
+            <li>Pricing</li>
+            <li>Portfolio</li>
+            <li svg xlms="fa-solid fa-bell">Contact</li>
+        </ul>
+        
+    </nav>
 </body>
 </html>
